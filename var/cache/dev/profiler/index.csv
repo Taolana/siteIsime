@@ -1,3 +1,7 @@
 4cc436,127.0.0.1,GET,http://localhost:8000/,1548747051,,404
 6b6805,127.0.0.1,GET,http://localhost:8000/favicon.ico,1548747053,2c6c09,200
 2c6c09,127.0.0.1,GET,http://localhost:8000/favicon.ico,1548747053,,404
+fb2e4d,127.0.0.1,GET,http://localhost:8000/,1550683047,,404
+61276c,127.0.0.1,GET,http://localhost:8000/login,1550683054,295f58,200
+295f58,127.0.0.1,GET,http://localhost:8000/login,1550683054,,404
+69330a,127.0.0.1,GET,http://localhost:8000/,1550683442,,404
