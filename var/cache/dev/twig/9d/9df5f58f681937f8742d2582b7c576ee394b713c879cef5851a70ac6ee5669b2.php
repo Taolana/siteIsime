@@ -74,16 +74,26 @@ class __TwigTemplate_6fab7fd368aa56253ba696ab52aab5fe1e1eed57f0012d215f8890acbfc
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
+
+
 <div class=\"example-wrapper\">
     <h1>Fokotany login ✅</h1>
-
-        <form action = \"";
-        // line 14
+    ";
+        // line 15
+        if ((isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new Twig_Error_Runtime('Variable "error" does not exist.', 15, $this->source); })())) {
+            // line 16
+            echo "        <span class=\"error\" style=\"color:red;\">";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["error"]) || array_key_exists("error", $context) ? $context["error"] : (function () { throw new Twig_Error_Runtime('Variable "error" does not exist.', 16, $this->source); })()), "messageKey", []), "html", null, true);
+            echo "</span>
+    ";
+        }
+        // line 18
+        echo "        <form action = \"";
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("login");
         echo "\" method=\"POST\">
                 <input type=\"text\" name=\"_username\" value=\"";
-        // line 15
-        echo twig_escape_filter($this->env, (isset($context["lastUsername"]) || array_key_exists("lastUsername", $context) ? $context["lastUsername"] : (function () { throw new Twig_Error_Runtime('Variable "lastUsername" does not exist.', 15, $this->source); })()), "html", null, true);
+        // line 19
+        echo twig_escape_filter($this->env, (isset($context["lastUsername"]) || array_key_exists("lastUsername", $context) ? $context["lastUsername"] : (function () { throw new Twig_Error_Runtime('Variable "lastUsername" does not exist.', 19, $this->source); })()), "html", null, true);
         echo "\" placeholder=\"Username ...\" >
                 <input type=\"password\" name=\"_password\">
                 <input type=\"submit\"  value=\"Connect\">
@@ -111,7 +121,7 @@ class __TwigTemplate_6fab7fd368aa56253ba696ab52aab5fe1e1eed57f0012d215f8890acbfc
 
     public function getDebugInfo()
     {
-        return array (  86 => 15,  82 => 14,  72 => 6,  63 => 5,  45 => 3,  15 => 1,);
+        return array (  96 => 19,  91 => 18,  85 => 16,  83 => 15,  72 => 6,  63 => 5,  45 => 3,  15 => 1,);
     }
 
     public function getSourceContext()
@@ -126,9 +136,13 @@ class __TwigTemplate_6fab7fd368aa56253ba696ab52aab5fe1e1eed57f0012d215f8890acbfc
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
+
+
 <div class=\"example-wrapper\">
     <h1>Fokotany login ✅</h1>
-
+    {% if error %}
+        <span class=\"error\" style=\"color:red;\">{{error.messageKey}}</span>
+    {% endif %}
         <form action = \"{{path('login')}}\" method=\"POST\">
                 <input type=\"text\" name=\"_username\" value=\"{{lastUsername}}\" placeholder=\"Username ...\" >
                 <input type=\"password\" name=\"_password\">

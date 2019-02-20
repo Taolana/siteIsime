@@ -80,5 +80,7 @@ class User implements UserInterface
     }
 
     public function  getSalt() {}
-    public function geteraseCredentials(){}
+    public function eraseCredentials(){
+        
+    }
 }
