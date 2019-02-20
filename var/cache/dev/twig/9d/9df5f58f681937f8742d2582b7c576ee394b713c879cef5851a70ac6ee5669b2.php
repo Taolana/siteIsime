@@ -50,7 +50,7 @@ class __TwigTemplate_6fab7fd368aa56253ba696ab52aab5fe1e1eed57f0012d215f8890acbfc
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Fokotany!";
+        echo "Hello SecurityController!";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -75,21 +75,20 @@ class __TwigTemplate_6fab7fd368aa56253ba696ab52aab5fe1e1eed57f0012d215f8890acbfc
 </style>
 
 <div class=\"example-wrapper\">
-    <h1> Fokotany Login </h1>
+    <h1>Fokotany login ✅</h1>
 
-    <form action=\"";
+        <form action = \"";
         // line 14
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("login");
-        echo "\" method = \"POST\">
-        <input type=\"text\" class=\"form-control\" name=\"_username\"  value=\"";
+        echo "\" method=\"POST\">
+                <input type=\"text\" name=\"_username\" value=\"";
         // line 15
-        echo twig_escape_filter($this->env, (isset($context["lastUserName"]) || array_key_exists("lastUserName", $context) ? $context["lastUserName"] : (function () { throw new Twig_Error_Runtime('Variable "lastUserName" does not exist.', 15, $this->source); })()), "html", null, true);
-        echo "\" placeholder=\"Username ...\" >    
-        <input type=\"password\" name=\"_password\">    
-        <input type=\"submit\" value=\"Connect\">    
-    </form>
+        echo twig_escape_filter($this->env, (isset($context["lastUsername"]) || array_key_exists("lastUsername", $context) ? $context["lastUsername"] : (function () { throw new Twig_Error_Runtime('Variable "lastUsername" does not exist.', 15, $this->source); })()), "html", null, true);
+        echo "\" placeholder=\"Username ...\" >
+                <input type=\"password\" name=\"_password\">
+                <input type=\"submit\"  value=\"Connect\">
 
-
+        </form>
 </div>
 ";
         
@@ -119,7 +118,7 @@ class __TwigTemplate_6fab7fd368aa56253ba696ab52aab5fe1e1eed57f0012d215f8890acbfc
     {
         return new Twig_Source("{% extends 'base.html.twig' %}
 
-{% block title %}Fokotany!{% endblock %}
+{% block title %}Hello SecurityController!{% endblock %}
 
 {% block body %}
 <style>
@@ -128,15 +127,14 @@ class __TwigTemplate_6fab7fd368aa56253ba696ab52aab5fe1e1eed57f0012d215f8890acbfc
 </style>
 
 <div class=\"example-wrapper\">
-    <h1> Fokotany Login </h1>
+    <h1>Fokotany login ✅</h1>
 
-    <form action=\"{{ path('login') }}\" method = \"POST\">
-        <input type=\"text\" class=\"form-control\" name=\"_username\"  value=\"{{lastUserName}}\" placeholder=\"Username ...\" >    
-        <input type=\"password\" name=\"_password\">    
-        <input type=\"submit\" value=\"Connect\">    
-    </form>
+        <form action = \"{{path('login')}}\" method=\"POST\">
+                <input type=\"text\" name=\"_username\" value=\"{{lastUsername}}\" placeholder=\"Username ...\" >
+                <input type=\"password\" name=\"_password\">
+                <input type=\"submit\"  value=\"Connect\">
 
-
+        </form>
 </div>
 {% endblock %}
 ", "security/login.html.twig", "F:\\ProjetHackathon\\Fokontany\\templates\\security\\login.html.twig");
