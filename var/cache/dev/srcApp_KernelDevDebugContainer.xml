@@ -2599,7 +2599,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory" public="false">
-      <argument type="service" id=".service_locator.ib4NaCV"/>
+      <argument type="service" id=".service_locator.2JsTbB9"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -3938,7 +3938,6 @@
     <service id=".abstract.instanceof.App\Repository\DepenseRepository" class="App\Repository\DepenseRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\FokontanyRepository" class="App\Repository\FokontanyRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\FoyerRepository" class="App\Repository\FoyerRepository" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".abstract.instanceof.App\Repository\IdAppartementRepository" class="App\Repository\IdAppartementRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\IndividuRepository" class="App\Repository\IndividuRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\NiveauEtudeRepository" class="App\Repository\NiveauEtudeRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\QuartiersRepository" class="App\Repository\QuartiersRepository" autowire="true" autoconfigure="true" abstract="true"/>
@@ -4031,7 +4030,7 @@
         <argument key="doctrine.orm.default_listeners.attach_entity_listeners" type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
       </argument>
     </service>
-    <service id=".service_locator.ib4NaCV" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.2JsTbB9" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Repository\AppartementsRepository" type="service" id="App\Repository\AppartementsRepository"/>
@@ -4039,7 +4038,6 @@
         <argument key="App\Repository\DepenseRepository" type="service" id="App\Repository\DepenseRepository"/>
         <argument key="App\Repository\FokontanyRepository" type="service" id="App\Repository\FokontanyRepository"/>
         <argument key="App\Repository\FoyerRepository" type="service" id="App\Repository\FoyerRepository"/>
-        <argument key="App\Repository\IdAppartementRepository" type="service" id="App\Repository\IdAppartementRepository"/>
         <argument key="App\Repository\IndividuRepository" type="service" id="App\Repository\IndividuRepository"/>
         <argument key="App\Repository\NiveauEtudeRepository" type="service" id="App\Repository\NiveauEtudeRepository"/>
         <argument key="App\Repository\QuartiersRepository" type="service" id="App\Repository\QuartiersRepository"/>
@@ -4449,11 +4447,6 @@
     </service>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\FoyerRepository" class="App\Repository\FoyerRepository" autowire="true" abstract="true"/>
     <service id="App\Repository\FoyerRepository" class="App\Repository\FoyerRepository" autowire="true" autoconfigure="true">
-      <tag name="doctrine.repository_service"/>
-      <argument type="service" id="doctrine"/>
-    </service>
-    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\IdAppartementRepository" class="App\Repository\IdAppartementRepository" autowire="true" abstract="true"/>
-    <service id="App\Repository\IdAppartementRepository" class="App\Repository\IdAppartementRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>

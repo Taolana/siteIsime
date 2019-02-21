@@ -45,8 +45,6 @@ $instance->setRepositoryFactory(new \Doctrine\Bundle\DoctrineBundle\Repository\C
     'App\\Repository\\CommuneRepository' => array('privates', 'App\\Repository\\CommuneRepository', 'getCommuneRepositoryService.php', true),
     'App\\Repository\\DepenseRepository' => array('privates', 'App\\Repository\\DepenseRepository', 'getDepenseRepositoryService.php', true),
     'App\\Repository\\FokontanyRepository' => array('privates', 'App\\Repository\\FokontanyRepository', 'getFokontanyRepositoryService.php', true),
-    'App\\Repository\\FoyerRepository' => array('privates', 'App\\Repository\\FoyerRepository', 'getFoyerRepositoryService.php', true),
-    'App\\Repository\\IdAppartementRepository' => array('privates', 'App\\Repository\\IdAppartementRepository', 'getIdAppartementRepositoryService.php', true),
     'App\\Repository\\IndividuRepository' => array('privates', 'App\\Repository\\IndividuRepository', 'getIndividuRepositoryService.php', true),
     'App\\Repository\\NiveauEtudeRepository' => array('privates', 'App\\Repository\\NiveauEtudeRepository', 'getNiveauEtudeRepositoryService.php', true),
     'App\\Repository\\QuartiersRepository' => array('privates', 'App\\Repository\\QuartiersRepository', 'getQuartiersRepositoryService.php', true),
