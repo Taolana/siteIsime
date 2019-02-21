@@ -175,6 +175,6 @@ class __TwigTemplate_0e2c4fff05ac411e66158471cbb31fe5fe405a4ac9199ce9d11a731a10e
         </div>
     </div>
 </div>
-", "@Twig/Exception/traces.html.twig", "/home/bynan/Fianarana/Bosy/Exercices/symfony4/NouveauProjet/taolana/vendor/symfony/twig-bundle/Resources/views/Exception/traces.html.twig");
+", "@Twig/Exception/traces.html.twig", "/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany/vendor/symfony/twig-bundle/Resources/views/Exception/traces.html.twig");
     }
 }
